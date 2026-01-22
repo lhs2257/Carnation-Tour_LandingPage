@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Heart, MapPin, ShieldCheck, ArrowRight } from "lucide-react";
 
@@ -8,7 +9,14 @@ export default function Home() {
       <header className="fixed top-0 w-full z-50 bg-brand-bg/80 backdrop-blur-md border-b border-brand-rose/20">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Heart className="w-6 h-6 text-brand-red fill-current" />
+            <div className="relative w-8 h-8">
+              <Image
+                src="/logo.png"
+                alt="Carnation Tour Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
             <span className="text-xl font-bold text-brand-red tracking-tight">
               Carnation Tour
             </span>
