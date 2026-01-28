@@ -31,7 +31,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-32 px-6 overflow-hidden min-h-[900px] flex items-center justify-center">
+      <section className="relative pt-32 pb-32 overflow-hidden min-h-[900px] flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -45,7 +45,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
         </div>
 
-        <div className="container mx-auto max-w-6xl relative z-20 text-white">
+        <div className="container mx-auto px-6 relative z-20 text-white">
           <div className="max-w-2xl">
             <div className="inline-block px-4 py-1.5 rounded-full bg-brand-red/90 text-white text-sm font-semibold mb-4 backdrop-blur-sm border border-white/20">
               부모님을 위한 프리미엄 도쿄 여행
