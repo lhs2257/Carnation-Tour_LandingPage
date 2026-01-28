@@ -31,46 +31,42 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 z-10">
-              <div className="inline-block px-4 py-1.5 rounded-full bg-brand-cream border border-brand-rose/30 text-brand-red text-sm font-semibold mb-2">
-                부모님을 위한 프리미엄 도쿄 여행
-              </div>
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
-                부모님께 드리는 <br />
-                <span className="text-brand-red">가장 따뜻한 여행</span>
-              </h1>
-              <p className="text-lg text-gray-600 leading-relaxed max-w-md">
-                5070 세대의 건강과 취향을 고려한 맞춤형 효도 관광.
-                <br />
-                전문 가이드와 케어 서비스로 안전하고 편안한 여정을 선물하세요.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <a
-                  href="http://localhost:3000"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-brand-red text-white text-lg font-semibold hover:bg-brand-rose transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 group"
-                >
-                  여행 상품 보러가기
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </div>
+      <section className="relative pt-32 pb-32 px-6 overflow-hidden min-h-[900px] flex items-center justify-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/hero-bg.png"
+            alt="Guide helping elderly couple"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Overlay for readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
+        </div>
+
+        <div className="container mx-auto max-w-6xl relative z-20 text-white">
+          <div className="max-w-2xl">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-brand-red/90 text-white text-sm font-semibold mb-4 backdrop-blur-sm border border-white/20">
+              부모님을 위한 프리미엄 도쿄 여행
             </div>
-
-            {/* Visual / Image Placeholder */}
-            <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-brand-red/10 to-brand-rose/20 border-4 border-white">
-              <div className="absolute inset-0 flex items-center justify-center">
-                {/* In a real app, uses next/image here */}
-                <div className="text-center p-8">
-                  <Heart className="w-24 h-24 text-brand-rose/30 mx-auto mb-4" />
-                  <p className="text-brand-rose/50 font-medium">따뜻한 추억을 선물합니다</p>
-                </div>
-              </div>
-
-              {/* Decorative elements */}
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-cream rounded-full blur-3xl opacity-50"></div>
-              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-rose/30 rounded-full blur-3xl opacity-50"></div>
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-md">
+              부모님께 드리는 <br />
+              <span className="text-brand-rose">가장 따뜻한 여행</span>
+            </h1>
+            <p className="text-lg text-gray-200 leading-relaxed mb-8 drop-shadow-sm max-w-lg">
+              5070 세대의 건강과 취향을 고려한 맞춤형 효도 관광.
+              <br />
+              전문 가이드와 케어 서비스로 안전하고 편안한 여정을 선물하세요.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="http://localhost:3000"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-brand-red text-white text-lg font-semibold hover:bg-brand-rose transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 group border border-white/10"
+              >
+                여행 상품 보러가기
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </div>
           </div>
         </div>
