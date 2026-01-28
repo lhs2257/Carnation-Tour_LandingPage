@@ -22,7 +22,7 @@ export default function Home() {
             </span>
           </div>
           <a
-            href="http://localhost:3000"
+            href="https://carnation-tour.vercel.app"
             className="text-sm font-medium text-brand-rose hover:text-brand-red transition-colors"
           >
             웹사이트 방문하기
@@ -61,7 +61,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="http://localhost:3000"
+                href="https://carnation-tour.vercel.app"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-brand-red text-white text-lg font-semibold hover:bg-brand-rose transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 group border border-white/10"
               >
                 여행 상품 보러가기
